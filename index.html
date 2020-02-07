@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 1 - Photo Album Web Application</title>
+  </head>
+  <style>
+  .addphotoarea {
+  width: auto;
+  max-width: 400px;
+  height: auto;
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid black;
+}
+  </style>
+  <body>
+  <h1>Assignment 1 - Photo Album Web Application</h1>
+  <div class="addphotoarea">
+    <h3>Add Photo to Gallery</h3>
+	<br>
+    <form action="gallery.php" method="post">
+    <table style="border: 0px;">
+    <tr>
+      <td>Photo name:</td>
+      <td><input type="text" name="photoname" size="30" /></td>
+    </tr>
+    <tr>
+     <td>Date taken:</td>
+     <td><input type="text" name="date" size="30" maxlength="3" /></td>
+    </tr>
+    <tr>
+     <td>Photographer:</td>
+     <td><input type="text" name="photographer" size="30" maxlength="3" /></td>
+    </tr>
+    <tr>
+      <td>Location:</td>
+      <td><input type="text" name="location" size="30" maxlength="100"</td>
+    </tr>    
+	<tr>
+     <td colspan="2" style="text-align: center;"><input type="file" name="Select File" /></td>
+    </tr>
+	<tr>
+     <td colspan="2" style="text-align: center;"><input type="submit" value="Submit" /></td>
+    </tr>
+    </table>
+    </form>
+	</div>
+</body>
+</html>
