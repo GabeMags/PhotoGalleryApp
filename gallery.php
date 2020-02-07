@@ -1,28 +1,59 @@
-<?php
-  $photoname = (str) $_POST['photoname'];
-  $date = (str) $_POST['date'];
-  $photographer = (str) $_POST['photographer'];
-  $location = preg_replace('/\t|\R/',' ',$_POST['location']);
-  //$document_root = $_SERVER['DOCUMENT_ROOT'];
-  //$date = date('H:i, jS F Y');
-?>
 <!DOCTYPE html>
 <html>
   <head>
-    <title>View Photos</title>
+    <title>View Your Photos</title>
+	<link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="app.css">
+	
   </head>
-  <style>
-  .viewallphotosarea {
-  width: auto;
-  max-width: 400px;
-  height: auto;
-  padding: 10px;
-  margin: 20px;
-  border: 1px solid black;
-}
-  </style>
   <body>
-  <div class="addphotoarea">
-    <h1>View all photos</h1>
-    <h2>Order Results</h2> 
-    <?php
+  <div class="featured-image-block-grid">
+  <div class="featured-image-block-grid-header small-10 medium-8 large-7 columns text-center">
+    <h2>View All Photos</h2>
+  </div>
+  <div class="row large-up-4 small-up-2">
+    <div class="featured-image-block column">
+     <a href="#">
+        <img src="https://unsplash.it/600/440?image=693" />
+        <p class="text-center featured-image-block-title">San Francisco</p>
+      </a>
+    </div>
+    
+    <div class="featured-image-block column">
+     <a href="#">
+        <img src="https://unsplash.it/600/440?image=452" />
+        <p class="text-center featured-image-block-title">Las Vegas</p>
+      </a>
+    </div>
+    
+    <div class="featured-image-block column">
+     <a href="#">
+        <img src="https://unsplash.it/600/440?image=667" />
+        <p class="text-center featured-image-block-title">Los Angeles</p>
+      </a>
+    </div>
+  
+    <div class="featured-image-block column">
+     <a href="#">
+        <img src="https://unsplash.it/600/440?image=249" />
+        <p class="text-center featured-image-block-title">Chicago</p>
+      </a>
+    </div>
+    
+    <div class="featured-image-block column">
+     <a href="#">
+        <img src="https://unsplash.it/600/440?image=382" />
+        <p class="text-center featured-image-block-title">Boston</p>
+      </a>
+    </div>
+
+    <div class="featured-image-block column">
+     <a href="#">
+        <img src="https://unsplash.it/600/440?image=1075" />
+        <p class="text-center featured-image-block-title">Seattle</p>
+      </a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
